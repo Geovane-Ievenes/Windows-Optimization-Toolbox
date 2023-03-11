@@ -135,8 +135,8 @@ elseif($Normal){
     Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects" -Name "VisualFXSetting" -Type DWord -Value 1
     Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\DWM" -Name "EnableAeroPeek" -Type DWord -Value 1
 
-    Write-Host "`nProcess finished !!"
-}
+    Write-Host "`nProcess finished !!" 
+}     
 else {
     Write-Host "Please enter a valid parameter: [optimize | Normal]"
 }
