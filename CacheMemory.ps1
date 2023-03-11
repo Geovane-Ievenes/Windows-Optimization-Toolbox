@@ -134,12 +134,12 @@ function Enable-CacheMemory
 
         if($modify){
             Set-RegistryValue -Path $REG_PATH -Name $cacheExtendedName -Value $caches[$currentCacheLevel] 
-            Write-Output "$((Get-Date -Format "G").toString()) >>> $cacheExtendedName Enabled | $($caches[$currentCacheLevel])KB cache enabled" | Tee-Object -Append -FilePath "$HOME/Desktop/CacheMemoryLog.txt"
+            Write-Output "$((Get-Date -Format "G").toString()) >>> $cacheExtendedName Enabled | $($caches[$currentCacheLevel])KB cache enabled" | Tee-Object -Append -FilePath "$HOME/Desktop/CacheMemoryLog.txt" -ErrorAction SilentlyContinue
             $modified = $true
         }
     }
 
-    if(!$modified) {Write-Output "$((Get-Date -Format "G").toString()) >>> All cache memories are enabled" | Tee-Object -Append -FilePath "$HOME/Desktop/CacheMemoryLog.txt"}  
+    if(!$modified) {Write-Output "$((Get-Date -Format "G").toString()) >>> All cache memories are enabled" | Tee-Object -Append -FilePath "$HOME/Desktop/CacheMemoryLog.txt" -ErrorAction SilentlyContinue}  
 }
 
 function Disable-CacheMemory
