@@ -8,7 +8,7 @@ function Get-PrinterStatus{
     {
       'Other'
     }
-    2 
+    2  
     {
       'Unknown'
     }
