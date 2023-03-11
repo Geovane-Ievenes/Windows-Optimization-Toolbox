@@ -1,3 +1,10 @@
+# Copyright (c) 2023 Geovane-Ievenes
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this PowerShell script and associated documentation files (the "Script"), to deal in the Script without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Script, and to permit persons to whom the Script is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Script.
+#
+
 [CmdletBinding()]
 
 Param(
